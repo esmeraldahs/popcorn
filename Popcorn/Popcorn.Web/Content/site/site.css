@@ -7404,3 +7404,33 @@ section.content > .s-DataGrid {
   font-style: italic;
   color: #966;
 }
+.s-Default-CustomerDialog > .size {
+  width: 650px;
+}
+.s-Default-CustomerDialog .caption {
+  width: 150px;
+}
+.s-Default-OrderItemDialog > .size {
+  width: 650px;
+}
+.s-Default-OrderItemDialog .caption {
+  width: 150px;
+}
+.s-Default-OrdersDialog > .size {
+  width: 650px;
+}
+.s-Default-OrdersDialog .caption {
+  width: 150px;
+}
+.s-Default-ProductDialog > .size {
+  width: 650px;
+}
+.s-Default-ProductDialog .caption {
+  width: 150px;
+}
+.s-Default-SupplierDialog > .size {
+  width: 650px;
+}
+.s-Default-SupplierDialog .caption {
+  width: 150px;
+}

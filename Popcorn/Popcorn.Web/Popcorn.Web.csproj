@@ -83,36 +83,30 @@
       <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Mono.Cecil, Version=0.10.0.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e">
-      <HintPath>..\..\packages\Serenity.Web.3.9.14\lib\net45\Mono.Cecil.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Mono.Cecil, Version=0.11.1.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serenity.Web.3.12.3\lib\net45\Mono.Cecil.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-      <HintPath>..\..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NUglify, Version=1.5.12.0, Culture=neutral, PublicKeyToken=15bc7810aec21b5e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\NUglify.1.5.12\lib\net40\NUglify.dll</HintPath>
+    <Reference Include="NUglify, Version=1.5.13.0, Culture=neutral, PublicKeyToken=15bc7810aec21b5e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUglify.1.5.13\lib\net40\NUglify.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
-    <Reference Include="Serenity.Core, Version=3.9.14.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\packages\Serenity.Core.3.9.14\lib\net45\Serenity.Core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Serenity.Core, Version=3.12.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serenity.Core.3.12.3\lib\net45\Serenity.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Serenity.Data, Version=3.9.14.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\packages\Serenity.Data.3.9.14\lib\net45\Serenity.Data.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Serenity.Data, Version=3.12.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serenity.Data.3.12.3\lib\net45\Serenity.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Serenity.Data.Entity, Version=3.9.14.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\packages\Serenity.Data.Entity.3.9.14\lib\net45\Serenity.Data.Entity.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Serenity.Data.Entity, Version=3.12.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serenity.Data.Entity.3.12.3\lib\net45\Serenity.Data.Entity.dll</HintPath>
     </Reference>
-    <Reference Include="Serenity.Services, Version=3.9.14.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\packages\Serenity.Services.3.9.14\lib\net45\Serenity.Services.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Serenity.Services, Version=3.12.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serenity.Services.3.12.3\lib\net45\Serenity.Services.dll</HintPath>
     </Reference>
-    <Reference Include="Serenity.Web, Version=3.9.14.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Serenity.Web.3.9.14\lib\net45\Serenity.Web.dll</HintPath>
+    <Reference Include="Serenity.Web, Version=3.12.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Serenity.Web.3.12.3\lib\net45\Serenity.Web.dll</HintPath>
     </Reference>
     <Reference Include="StackExchange.Exceptional, Version=1.0.130.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\StackExchange.Exceptional.1.0.130\lib\net40\StackExchange.Exceptional.dll</HintPath>
@@ -201,6 +195,7 @@
     <Content Include="Content\ionicons.css" />
     <Content Include="Content\ionicons.min.css" />
     <Content Include="Content\jquery.fileupload.css" />
+    <Content Include="Content\Login.css" />
     <Content Include="Content\pace.css" />
     <Content Include="Content\serenity\images\32px.png" />
     <Content Include="Content\serenity\images\accessright.png" />
@@ -518,6 +513,8 @@
     <Content Include="Content\serenity\images\zoom.png" />
     <Content Include="Content\serenity\serenity.css" />
     <Content Include="Content\simple-line-icons.css" />
+    <Content Include="Content\site\slides\pngguru.com.png" />
+    <Content Include="Content\site\slides\popcorn-background1.jpg" />
     <Content Include="Content\slick-default-theme.css" />
     <Content Include="Content\slick.columnpicker.css" />
     <Content Include="Content\slick.grid.css" />
@@ -825,6 +822,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="SQL\01_sql_tables_creation.sql" />
     <Content Include="wkhtmltopdf-license.txt" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -1017,6 +1015,24 @@
     <Content Include="tools\Node\less\lib\less\visitor.js" />
     <Content Include="tools\Node\node.exe" />
     <Content Include="tsconfig.json" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Administration.PermissionKeys.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.CustomerColumns.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrderItemColumns.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrdersColumns.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProductColumns.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.SupplierColumns.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="Imports\ServerTypings\Texts.ts">
       <DependentUpon>ServerTypings.tt</DependentUpon>
     </TypeScriptCompile>
@@ -1262,9 +1278,6 @@
     <Content Include="Content\bootstrap-less\mixins\text-overflow.less" />
     <Content Include="Content\bootstrap-less\mixins\vendor-prefixes.less" />
     <Content Include="Content\bootstrap-less\variables.less" />
-    <Content Include="Content\site\slides\slide1.jpg" />
-    <Content Include="Content\site\slides\slide2.jpg" />
-    <Content Include="Content\site\slides\slide3.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Imports\MultipleOutputHelper.ttinclude" />
     <Content Include="Content\site\site.administration.less" />
@@ -1568,6 +1581,67 @@
     <TypeScriptCompile Include="Modules\Common\Helpers\BasicProgressDialog.ts" />
     <TypeScriptCompile Include="Modules\Common\Helpers\BulkServiceAction.ts" />
     <TypeScriptCompile Include="Scripts\typings\serenity\Serenity.CoreLib.d.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.CustomerRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.CustomerService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Customer\CustomerIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Customer\CustomerDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Customer\CustomerGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.CustomerForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Content\site\site.default.less" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrderItemRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrderItemService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\OrderItem\OrderItemIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\OrderItem\OrderItemDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\OrderItem\OrderItemGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrderItemForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrdersRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrdersService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Orders\OrdersIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Orders\OrdersDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Orders\OrdersGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrdersForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProductRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProductService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Product\ProductIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Product\ProductDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Product\ProductGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProductForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.SupplierRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.SupplierService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Supplier\SupplierIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Supplier\SupplierDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Supplier\SupplierGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.SupplierForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -1701,6 +1775,37 @@
     <Compile Include="Modules\Administration\UserPermission\UserPermissionRow.cs" />
     <Compile Include="Modules\Administration\UserPermission\UserPermissionRepository.cs" />
     <Compile Include="Modules\Administration\UserPermission\UserPermissionEndpoint.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerRow.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerRepository.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerEndpoint.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerPage.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerColumns.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerForm.cs" />
+    <Compile Include="Modules\Default\DefaultNavigation.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemRow.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemRepository.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemEndpoint.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemPage.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemColumns.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemForm.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersRow.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersRepository.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersEndpoint.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersPage.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersColumns.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersForm.cs" />
+    <Compile Include="Modules\Default\Product\ProductRow.cs" />
+    <Compile Include="Modules\Default\Product\ProductRepository.cs" />
+    <Compile Include="Modules\Default\Product\ProductEndpoint.cs" />
+    <Compile Include="Modules\Default\Product\ProductPage.cs" />
+    <Compile Include="Modules\Default\Product\ProductColumns.cs" />
+    <Compile Include="Modules\Default\Product\ProductForm.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierRow.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierRepository.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierEndpoint.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierPage.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierColumns.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierForm.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

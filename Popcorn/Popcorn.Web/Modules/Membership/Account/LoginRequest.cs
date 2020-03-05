@@ -8,9 +8,8 @@ namespace Popcorn.Membership
     [BasedOnRow(typeof(Administration.Entities.UserRow))]
     public class LoginRequest : ServiceRequest
     {
-        [Placeholder("default username is 'admin'")]
         public string Username { get; set; }
-        [PasswordEditor, Placeholder("default password for 'admin' is 'serenity'"), Required(true)]
+        [PasswordEditor, Required(true)]
         public string Password { get; set; }
     }
 }
