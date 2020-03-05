@@ -105,7 +105,7 @@ if (typeof Slick === "undefined") {
             name: "",
             resizable: true,
             sortable: false,
-            minWidth: 30,
+            minWidth: 50,
             rerenderOnResize: false,
             headerCssClass: null,
             footerCssClass: null,

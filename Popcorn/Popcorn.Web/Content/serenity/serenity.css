@@ -3338,7 +3338,7 @@ a.quick-search-field {
 .s-Toolbar .button-inner {
   float: left;
   display: block;
-  padding: 3px 3px 3px 20px;
+  padding: 10px 10px 10px 20px;
   background-repeat: no-repeat;
   background-position: center left;
 }

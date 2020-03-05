@@ -825,6 +825,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="SQL\01_sql_tables_creation.sql" />
     <Content Include="wkhtmltopdf-license.txt" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -1568,6 +1569,67 @@
     <TypeScriptCompile Include="Modules\Common\Helpers\BasicProgressDialog.ts" />
     <TypeScriptCompile Include="Modules\Common\Helpers\BulkServiceAction.ts" />
     <TypeScriptCompile Include="Scripts\typings\serenity\Serenity.CoreLib.d.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.CustomerRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.CustomerService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Customer\CustomerIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Customer\CustomerDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Customer\CustomerGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.CustomerForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Content\site\site.default.less" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrderItemRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrderItemService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\OrderItem\OrderItemIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\OrderItem\OrderItemDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\OrderItem\OrderItemGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrderItemForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrdersRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrdersService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Orders\OrdersIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Orders\OrdersDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Orders\OrdersGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.OrdersForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProductRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProductService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Product\ProductIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Product\ProductDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Product\ProductGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProductForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.SupplierRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.SupplierService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Supplier\SupplierIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Supplier\SupplierDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Supplier\SupplierGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.SupplierForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -1585,6 +1647,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\DefaultDB\DefaultDB_20141103_140000_Initial.cs" />
+    <Compile Include="Migrations\DefaultDB\DefaultDB_20141111_113000_Permissions.cs" />
+    <Compile Include="Migrations\DefaultDB\DefaultDB_20160515_072600_UserPreferences.cs" />
+    <Compile Include="Migrations\DefaultDB\DefaultDB_20161029_130000_ExceptionLog.cs" />
     <Compile Include="Modules\Administration\AdministrationNavigation.cs" />
     <Compile Include="Modules\Administration\Language\LanguageLookup.cs" />
     <Compile Include="Modules\Administration\RolePermission\RolePermissionUpdateRequest.cs" />
@@ -1621,11 +1687,7 @@
     <Compile Include="Imports\ClientTypes\StaticTextBlockAttribute.cs">
       <DependentUpon>ClientTypes.tt</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\DefaultDB\DefaultDB_20160515_072600_UserPreferences.cs" />
-    <Compile Include="Migrations\DefaultDB\DefaultDB_20161029_130000_ExceptionLog.cs" />
     <Compile Include="Migrations\MigrationUtils.cs" />
-    <Compile Include="Migrations\DefaultDB\DefaultDB_20141111_113000_Permissions.cs" />
-    <Compile Include="Migrations\DefaultDB\DefaultDB_20141103_140000_Initial.cs" />
     <Compile Include="Modules\Administration\Translation\TranslationUpdateRequest.cs" />
     <Compile Include="Modules\Administration\Translation\TranslationListRequest.cs" />
     <Compile Include="Modules\Administration\Translation\TranslationItem.cs" />
@@ -1701,6 +1763,37 @@
     <Compile Include="Modules\Administration\UserPermission\UserPermissionRow.cs" />
     <Compile Include="Modules\Administration\UserPermission\UserPermissionRepository.cs" />
     <Compile Include="Modules\Administration\UserPermission\UserPermissionEndpoint.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerRow.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerRepository.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerEndpoint.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerPage.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerColumns.cs" />
+    <Compile Include="Modules\Default\Customer\CustomerForm.cs" />
+    <Compile Include="Modules\Default\DefaultNavigation.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemRow.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemRepository.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemEndpoint.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemPage.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemColumns.cs" />
+    <Compile Include="Modules\Default\OrderItem\OrderItemForm.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersRow.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersRepository.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersEndpoint.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersPage.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersColumns.cs" />
+    <Compile Include="Modules\Default\Orders\OrdersForm.cs" />
+    <Compile Include="Modules\Default\Product\ProductRow.cs" />
+    <Compile Include="Modules\Default\Product\ProductRepository.cs" />
+    <Compile Include="Modules\Default\Product\ProductEndpoint.cs" />
+    <Compile Include="Modules\Default\Product\ProductPage.cs" />
+    <Compile Include="Modules\Default\Product\ProductColumns.cs" />
+    <Compile Include="Modules\Default\Product\ProductForm.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierRow.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierRepository.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierEndpoint.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierPage.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierColumns.cs" />
+    <Compile Include="Modules\Default\Supplier\SupplierForm.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
